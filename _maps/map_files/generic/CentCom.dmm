@@ -26097,6 +26097,23 @@
 /obj/item/reagent_containers/medspray/sterilizine,
 /turf/open/floor/plasteel/white,
 /area/centcom/control)
+"gOo" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/papershredder,
+/turf/open/floor/plasteel/dark,
+/area/centcom/control)
 "jJm" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/neutral{
@@ -26137,23 +26154,6 @@
 	department = "Central Command";
 	destination = "Bridge"
 	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/control)
-"oAH" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/papershredder,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
 "uDo" = (
@@ -70051,7 +70051,7 @@ ain
 atN
 anq
 aio
-oAH
+gOo
 aiC
 akl
 axW
