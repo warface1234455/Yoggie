@@ -50,7 +50,7 @@
 	if(replaced_by == /datum/surgery)
 		return FALSE
 
-	if(HAS_TRAIT(user, TRAIT_SURGEON) || HAS_TRAIT(user.mind, TRAIT_SURGEON))
+	if(HAS_TRAIT(user, TRAIT_SURGEON_ABDUCTOR) || HAS_TRAIT(user.mind, TRAIT_SURGEON_ABDUCTOR))
 		if(replaced_by)
 			return FALSE
 		else
@@ -134,7 +134,7 @@
 	SSblackbox.record_feedback("tally", "surgeries_completed", 1, type)
 	qdel(src)
 
-/datum/surgery/proc/get_probability_multiplier()
+/datum/surgery/proc/get_probability_multiplier(mob/user)
 	var/probability = 0.5
 	var/turf/T = get_turf(target)
 
@@ -144,6 +144,15 @@
 		probability = 0.8
 	else if(locate(/obj/structure/bed, T))
 		probability = 0.7
+
+	if(HAS_TRAIT(user, TRAIT_SURGEON_ABDUCTOR))
+		probability *= 1.5
+	else if(HAS_TRAIT(user, TRAIT_SURGEON))
+		probability *= 1
+	else if(HAS_TRAIT(user, TRAIT_SURGEON_WEAK))
+		probability *= 0.8
+	else
+		probability *= 0.5
 
 	return probability + success_multiplier
 

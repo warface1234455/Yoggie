@@ -187,6 +187,7 @@
 	transfer_prints = TRUE
 	resistance_flags = NONE
 	var/carrytrait = TRAIT_QUICK_CARRY
+	var/surgerytrait = TRAIT_SURGEON_WEAK
 
 /obj/item/clothing/gloves/color/latex/nitrile
 	name = "nitrile gloves"
@@ -196,15 +197,18 @@
 	item_color = "cmo"
 	transfer_prints = FALSE
 	carrytrait = TRAIT_QUICKER_CARRY
+	surgerytrait = TRAIT_SURGEON
 
 /obj/item/clothing/gloves/color/latex/equipped(mob/user, slot)
 	..()
 	if(slot == SLOT_GLOVES)
 		ADD_TRAIT(user, carrytrait, CLOTHING_TRAIT)
+		ADD_TRAIT(user, surgerytrait, CLOTHING_TRAIT)
 
 /obj/item/clothing/gloves/color/latex/dropped(mob/user)
 	..()
 	REMOVE_TRAIT(user, carrytrait, CLOTHING_TRAIT)
+	REMOVE_TRAIT(user, surgerytrait, CLOTHING_TRAIT)
 
 /obj/item/clothing/gloves/color/white
 	name = "white gloves"
