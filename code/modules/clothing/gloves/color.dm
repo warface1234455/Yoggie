@@ -43,13 +43,22 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
 	resistance_flags = NONE
-	var/can_be_cut = 1
+	var/can_be_cut = TRUE
 
 /obj/item/clothing/gloves/color/black/forensic
 	desc = "Specially made gloves for detectives. The luminescent threads woven into the material stand out under scrutiny."
 	name = "forensic gloves"
 	icon_state = "forensic"
-	can_be_cut = 0
+	can_be_cut = FALSE
+
+/obj/item/clothing/gloves/color/black/forensic/equipped(mob/user, slot)
+	..()
+	if(slot == SLOT_GLOVES)
+		ADD_TRAIT(user, TRAIT_SURGEON_WEAK, CLOTHING_TRAIT)
+
+/obj/item/clothing/gloves/color/black/forensic/dropped(mob/user)
+	..()
+	REMOVE_TRAIT(user, TRAIT_SURGEON_WEAK, CLOTHING_TRAIT)
 
 /obj/item/clothing/gloves/color/black/hos
 	item_color = "hosred"	//Exists for washing machines. Is not different from black gloves in any way.
@@ -71,15 +80,18 @@
 	desc = "Rudimentary gloves that aid in carrying."
 	icon_state = "goligloves"
 	item_state = "goligloves"
+	can_be_cut = FALSE
 
 /obj/item/clothing/gloves/color/black/goliath/equipped(mob/user, slot)
 	..()
 	if(slot == SLOT_GLOVES)
 		ADD_TRAIT(user, TRAIT_QUICK_CARRY, CLOTHING_TRAIT)
+		ADD_TRAIT(user, TRAIT_SURGEON_WEAK, CLOTHING_TRAIT)
 
 /obj/item/clothing/gloves/color/black/goliath/dropped(mob/user)
 	..()
 	REMOVE_TRAIT(user, TRAIT_QUICK_CARRY, CLOTHING_TRAIT)
+	REMOVE_TRAIT(user, TRAIT_SURGEON_WEAK, CLOTHING_TRAIT)
 
 /obj/item/clothing/gloves/color/orange
 	name = "orange gloves"
