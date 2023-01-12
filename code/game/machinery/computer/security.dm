@@ -54,6 +54,10 @@
 	clockwork = TRUE //it'd look weird
 	pass_flags = PASSTABLE
 
+/obj/machinery/computer/secure_data/Destroy()
+	. = ..()
+	qdel(radio)
+
 /obj/machinery/computer/secure_data/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
