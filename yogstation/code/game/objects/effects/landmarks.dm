@@ -104,7 +104,7 @@ GLOBAL_LIST_EMPTY(chosen_station_templates)
 	return TRUE
 
 /obj/effect/landmark/stationroom/box/engine
-	template_names = list("Engine SM" = 60, "Engine Singulo And Tesla" = 40)
+	template_names = list("Engine SM" = 50, "Engine Singulo And Tesla" = 30, "Engine TEG" = 0, "Engine RBMK" = 20)
 	icon = 'yogstation/icons/rooms/box/engine.dmi'
 
 /obj/effect/landmark/stationroom/box/engine/choose()
@@ -117,6 +117,11 @@ GLOBAL_LIST_EMPTY(chosen_station_templates)
 			return "Engine Singulo And Tesla"
 		if(3)
 			return . //We let the normal choose() do the work if we want to have all of them in play
+		if(4)
+			return "Engine TEG"
+		if(5)
+			return "Engine RBMK"
+
 
 /obj/effect/landmark/stationroom/box/testingsite
 	template_names = list("Bunker Bomb Range","Syndicate Bomb Range","Clown Bomb Range", "Clerk Bomb Range")
