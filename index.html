@@ -29,8 +29,8 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(703 modules,
-    1895/8971 macros, 21.1%)</aside></h3>
+<aside>(705 modules,
+    1899/8984 macros, 21.1%)</aside></h3>
 <ul class="index-tree modules">
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
     <li class="has-children"><span title="code&#x2F;__DEFINES">__DEFINES</span><ul class="index-tree">
@@ -267,6 +267,7 @@ SPDX-License-Identifier: MIT</li>
     <li><a href="code/datums/elements/connect_loc.html" title="code&#x2F;datums&#x2F;elements&#x2F;connect_loc">connect_loc</a></li>
     <li><a href="code/datums/elements/content_barfer.html" title="code&#x2F;datums&#x2F;elements&#x2F;content_barfer">content_barfer</a></li>
     <li><a href="code/datums/elements/firestacker.html" title="code&#x2F;datums&#x2F;elements&#x2F;firestacker">firestacker</a></li>
+    <li><a href="code/datums/elements/life_drain.html" title="code&#x2F;datums&#x2F;elements&#x2F;life_drain">life_drain</a></li>
     <li><a href="code/datums/elements/squish.html" title="code&#x2F;datums&#x2F;elements&#x2F;squish">squish</a></li>
     <li><a href="code/datums/elements/update_icon_blocker.html" title="code&#x2F;datums&#x2F;elements&#x2F;update_icon_blocker">update_icon_blocker</a></li>
     </ul></li>
@@ -463,7 +464,10 @@ SPDX-License-Identifier: MIT</li>
     <li><a href="code/modules/antagonists/bloodsuckers/powers/gohome.html" title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;powers&#x2F;gohome">gohome</a></li>
     <li><a href="code/modules/antagonists/bloodsuckers/powers/masquerade.html" title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;powers&#x2F;masquerade">masquerade</a></li>
     <li><a href="code/modules/antagonists/bloodsuckers/powers/recuperate.html" title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;powers&#x2F;recuperate">recuperate</a></li>
-    <li><span class="no-substance">targeted&#x2F;</span><a href="code/modules/antagonists/bloodsuckers/powers/targeted/mesmerize.html" title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;powers&#x2F;targeted&#x2F;mesmerize">mesmerize</a></li>
+    <li class="has-children"><span title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;powers&#x2F;targeted">targeted</span><ul class="index-tree">
+    <li><a href="code/modules/antagonists/bloodsuckers/powers/targeted/hecata.html" title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;powers&#x2F;targeted&#x2F;hecata">hecata</a></li>
+    <li><a href="code/modules/antagonists/bloodsuckers/powers/targeted/mesmerize.html" title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;powers&#x2F;targeted&#x2F;mesmerize">mesmerize</a></li>
+    </ul></li>
     </ul></li>
     <li class="has-children"><span title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;structures">structures</span><ul class="index-tree">
     <li><a href="code/modules/antagonists/bloodsuckers/structures/bloodsucker_crypt.html" title="code&#x2F;modules&#x2F;antagonists&#x2F;bloodsuckers&#x2F;structures&#x2F;bloodsucker_crypt">bloodsucker_crypt</a></li>
@@ -1035,7 +1039,7 @@ SPDX-License-Identifier: MIT</li>
 
 
 <h3 id="types">Types
-<aside>(884 detailed/1686 documented/28101 total, 6%)</aside></h3>
+<aside>(912 detailed/1717 documented/28154 total, 6.1%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a> - A grouping of tiles into a logical space, mostly used by map editors<ul class="index-tree">
@@ -1165,6 +1169,8 @@ See: <a href="datum/controller/subsystem/achievements.html" title="/datum/contro
     <li><span class="no-substance" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;fortitude&#x2F;hunter">Flow</span> - Monster Hunter version</li>
     </ul></li>
     <li><a href="datum/action/cooldown/bloodsucker/gohome.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;gohome">Vanishing Act</a></li>
+    <li><span class="no-substance">hecata&#x2F;</span><a href="datum/action/cooldown/bloodsucker/hecata/spiritcall.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;hecata&#x2F;spiritcall">Spirit Call</a> - summon wraiths (weakened shades) to attack anyone who isn't a zombie. This includes non-zombified vassals. However, you can get around this by zombifying your vassals.
+to do this, you can make someone your favorite vassal, or you can kill them and then revive them with necromancy.</li>
     <li><a href="datum/action/cooldown/bloodsucker/masquerade.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;masquerade">Masquerade</a></li>
     <li class="has-children"><span title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;olfaction">olfaction</span><ul class="index-tree">
     <li><a href="datum/action/cooldown/bloodsucker/olfaction/acquire_scent.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;olfaction&#x2F;acquire_scent">Sanguine Olfaction</a></li>
@@ -1174,6 +1180,7 @@ See: <a href="datum/controller/subsystem/achievements.html" title="/datum/contro
     <li class="has-children"><a href="datum/action/cooldown/bloodsucker/targeted.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;targeted">targeted</a><ul class="index-tree">
     <li><a href="datum/action/cooldown/bloodsucker/targeted/brawn.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;targeted&#x2F;brawn">Brawn</a></li>
     <li><a href="datum/action/cooldown/bloodsucker/targeted/haste.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;targeted&#x2F;haste">Immortal Haste</a></li>
+    <li><a href="datum/action/cooldown/bloodsucker/targeted/hecata.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;targeted&#x2F;hecata">hecata</a> - Hecata, the unified clan of death.</li>
     <li><a href="datum/action/cooldown/bloodsucker/targeted/lunge.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;targeted&#x2F;lunge">Predatory Lunge</a></li>
     <li><a href="datum/action/cooldown/bloodsucker/targeted/mesmerize.html" title="&#x2F;datum&#x2F;action&#x2F;cooldown&#x2F;bloodsucker&#x2F;targeted&#x2F;mesmerize">Mesmerize</a></li>
     </ul></li>
@@ -1556,7 +1563,7 @@ for scheduling different subsystems for different stages of the round</li>
     <li class="has-children"><a href="datum/design.html" title="&#x2F;datum&#x2F;design">Name</a><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;RPED">Rapid Part Exchange Device</span> - Stock Parts</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;advmop">Advanced Mop</span> - Janitor Designs</li>
-    <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;airlock_scanner">Airlock scanner</span> - Autolathe Designs</li>
+    <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;airlock_scanner">Airlock Scanner</span> - Autolathe Designs</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;alienscalpel">Alien Scalpel</span> - Alien Surgical Tools</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;alienwrench">Alien Wrench</span> - Alien Tools</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;basic_cell">Basic Power Cell</span> - Power</li>
@@ -1569,6 +1576,7 @@ for scheduling different subsystems for different stages of the round</li>
     </ul></li>
     <li><a href="datum/design/borg_upgrade_analyzer.html" title="&#x2F;datum&#x2F;design&#x2F;borg_upgrade_analyzer">Cyborg Upgrade (Advanced Analyzer)</a></li>
     <li><a href="datum/design/borg_upgrade_engi_advancedtools.html" title="&#x2F;datum&#x2F;design&#x2F;borg_upgrade_engi_advancedtools">Cyborg Upgrade (Advanced Engineering Tools)</a></li>
+    <li><a href="datum/design/borg_upgrade_gemsatchel.html" title="&#x2F;datum&#x2F;design&#x2F;borg_upgrade_gemsatchel">Cyborg Upgrade (Gem Satchel)</a></li>
     <li><a href="datum/design/borg_upgrade_holosign.html" title="&#x2F;datum&#x2F;design&#x2F;borg_upgrade_holosign">Cyborg Upgrade (ATMOS Holofan Projector)</a></li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;design&#x2F;borg_upgrade_rename">Cyborg Upgrade (Rename Board)</span> - Borg Upgrades</li>
     <li><a href="datum/design/borg_upgrade_surgerykit.html" title="&#x2F;datum&#x2F;design&#x2F;borg_upgrade_surgerykit">Cyborg Upgrade (Advanced Surgical Kit)</a></li>
@@ -1690,6 +1698,7 @@ and don't call start() in a loop that will be repeated otherwise it'll get spamm
 When the object moves, it will unhook the signal and rehook it to the new object.</li>
     <li><a href="datum/element/content_barfer.html" title="&#x2F;datum&#x2F;element&#x2F;content_barfer">content_barfer</a> - Content Barfer; which expels the contents of a mob when it dies, or is transformed</li>
     <li><a href="datum/element/firestacker.html" title="&#x2F;datum&#x2F;element&#x2F;firestacker">firestacker</a> - Can be applied to /atom/movable subtypes to make them apply fire stacks to things they hit</li>
+    <li><a href="datum/element/life_draining.html" title="&#x2F;datum&#x2F;element&#x2F;life_draining">life_draining</a> - Slowly drains HP from a living mob.</li>
     <li><a href="datum/element/squish.html" title="&#x2F;datum&#x2F;element&#x2F;squish">squish</a> - squish.dm</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;element&#x2F;update_icon_blocker">update_icon_blocker</span> - Prevents calling anything in update_icon() like update_icon_state() or update_overlays()</li>
     </ul></li>
@@ -1864,6 +1873,7 @@ ALSO - registered_account in _vending.dm for banks, and assigning new ones.
 Steal hearts. You just really wanna have some hearts.</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;bloodsucker&#x2F;leader">leader</span> - Mutilate a certain amount of Vassals
 Convert a certain amount of vassals</li>
+    <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;bloodsucker&#x2F;necromance">necromance</span> - Necromance X amount of people (Hecata)</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;bloodsucker&#x2F;protege">vassalization</span> - Vassalize someone in charge (Head of Staff + QM)</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;bloodsucker&#x2F;solars">solars</span> - Destroy the Solar Arrays</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;bloodsucker&#x2F;vassalhim">vassalhim</span> - Vassalize a target.</li>
@@ -2050,6 +2060,7 @@ They attach to an atom and provide the editor + playback functionality.</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;species&#x2F;jelly&#x2F;stargazer">Stargazer</span> - STARGAZERS</li>
     </ul></li>
     <li><a href="datum/species/plasmaman.html" title="&#x2F;datum&#x2F;species&#x2F;plasmaman">Plasmaman</a></li>
+    <li><span class="no-substance">zombie&#x2F;</span><a href="datum/species/zombie/hecata.html" title="&#x2F;datum&#x2F;species&#x2F;zombie&#x2F;hecata">Sanguine Zombie</a></li>
     </ul></li>
     <li class="has-children"><a href="datum/spellbook_entry.html" title="&#x2F;datum&#x2F;spellbook_entry">spellbook_entry</a><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;datum&#x2F;spellbook_entry&#x2F;challenge">Take the Challenge</span> - Non-purchasable flavor spells to populate the spell book with, for style.</li>
@@ -2646,11 +2657,36 @@ Attacking any human mob (typically yourself) will cause their arm to instantly b
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;sight">sight</span> - HUD/SIGHT things</li>
     <li class="has-children"><a href="obj/item/borg/upgrade.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade">borg upgrade module.</a><ul class="index-tree">
     <li><a href="obj/item/borg/upgrade/adv_analyzer.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;adv_analyzer">medical cyborg advanced health analyzer</a></li>
-    <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;ai">B.O.R.I.S. module</span> - Removes new surgery tools
-Puts in old surgery tools</li>
+    <li><a href="obj/item/borg/upgrade/amop.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;amop">janitor cyborg advanced mop</a></li>
+    <li><a href="obj/item/borg/upgrade/broomer.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;broomer">experimental push broom</a></li>
+    <li><a href="obj/item/borg/upgrade/ddrill.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;ddrill">mining cyborg diamond drill</a></li>
+    <li><a href="obj/item/borg/upgrade/defib.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;defib">medical cyborg defibrillator</a></li>
+    <li><a href="obj/item/borg/upgrade/disablercooler.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;disablercooler">cyborg rapid disabler cooling module</a></li>
+    <li><a href="obj/item/borg/upgrade/expand.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;expand">borg expander</a></li>
+    <li><a href="obj/item/borg/upgrade/hypospray.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;hypospray">medical cyborg hypospray advanced synthesiser</a></li>
+    <li class="has-children"><a href="obj/item/borg/upgrade/language.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;language">cyborg language translator upgrade</a> - The base upgrade for the language upgrades. Use the children upgrades instead.<ul class="index-tree">
+    <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;language&#x2F;expanded">advanced translation matrix upgrade</span> - Contains both common and rarer languages.</li>
+    <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;language&#x2F;normal">translation matrix upgrade</span> - Contains common languages.</li>
+    <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;language&#x2F;omni">universal translation matrix upgrade</span> - Contains every language.</li>
+    </ul></li>
+    <li><a href="obj/item/borg/upgrade/lavaproof.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;lavaproof">mining cyborg lavaproof tracks</a></li>
+    <li class="has-children"><a href="obj/item/borg/upgrade/panel_access_remover.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;panel_access_remover">cyborg firmware hack</a><ul class="index-tree">
+    <li><a href="obj/item/borg/upgrade/panel_access_remover/freeminer.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;panel_access_remover&#x2F;freeminer">free miner cyborg firmware hack</a></li>
+    </ul></li>
+    <li><a href="obj/item/borg/upgrade/piercing_hypospray.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;piercing_hypospray">cyborg piercing hypospray</a></li>
+    <li><a href="obj/item/borg/upgrade/plasmacutter.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;plasmacutter">mining cyborg plasma cutter</a></li>
+    <li><a href="obj/item/borg/upgrade/rename.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;rename">cyborg reclassification board</a></li>
+    <li><a href="obj/item/borg/upgrade/restart.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;restart">cyborg emergency reboot module</a></li>
+    <li><a href="obj/item/borg/upgrade/rped.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;rped">engineering cyborg RPED</a></li>
     <li><a href="obj/item/borg/upgrade/selfrepair.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;selfrepair">self-repair module</a></li>
-    <li><a href="obj/item/borg/upgrade/surgerykit.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;surgerykit">medical cyborg advanced surgical kit</a> - Removes new advanced analyzer
-Puts in old analyzer</li>
+    <li><a href="obj/item/borg/upgrade/soh.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;soh">mining cyborg satchel of holding</a></li>
+    <li><a href="obj/item/borg/upgrade/syndicate.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;syndicate">illegal equipment module</a></li>
+    <li><a href="obj/item/borg/upgrade/tboh.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;tboh">janitor cyborg trash bag of holding</a></li>
+    <li><a href="obj/item/borg/upgrade/thrusters.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;thrusters">ion thruster upgrade</a></li>
+    <li class="has-children"><a href="obj/item/borg/upgrade/transform.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;transform">borg module picker (Standard)</a><ul class="index-tree">
+    <li><a href="obj/item/borg/upgrade/transform/security.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;transform&#x2F;security">borg module picker (Security)</a></li>
+    </ul></li>
+    <li><a href="obj/item/borg/upgrade/vtec.html" title="&#x2F;obj&#x2F;item&#x2F;borg&#x2F;upgrade&#x2F;vtec">cyborg VTEC module</a></li>
     </ul></li>
     </ul></li>
     <li><a href="obj/item/borg_snack_dispenser.html" title="&#x2F;obj&#x2F;item&#x2F;borg_snack_dispenser">Automated Borg Snack Dispenser</a></li>
@@ -2732,6 +2768,7 @@ the program that displays laws should always be usable, and the exceptions were 
     <li><a href="obj/item/construction/rcd.html" title="&#x2F;obj&#x2F;item&#x2F;construction&#x2F;rcd">rapid-construction-device (RCD)</a></li>
     </ul></li>
     <li><span class="no-substance">deskbell&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;deskbell&#x2F;button">button</span> - Buttons</li>
+    <li><span class="no-substance">device&#x2F;</span><a href="obj/item/device/loic_remote.html" title="&#x2F;obj&#x2F;item&#x2F;device&#x2F;loic_remote">low-orbit ion cannon remote</a></li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;item&#x2F;disk">disk</span><ul class="index-tree">
     <li><span class="no-substance">cargo&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;disk&#x2F;cargo&#x2F;bluespace_pod">Bluespace Drop Pod Upgrade</span> - if(pod.effectShrapnel)</li>
     <li><span class="no-substance">design_disk&#x2F;</span><a href="obj/item/disk/design_disk/limbs.html" title="&#x2F;obj&#x2F;item&#x2F;disk&#x2F;design_disk&#x2F;limbs">Limb Design Disk</a> - Design disks and designs - for adding limbs and organs to the limbgrower.</li>
@@ -3358,7 +3395,7 @@ uranium</li>
 </main>
 <footer>
     yogstation.dme
-    <a href="https://github.com/warface1234455/Yoggie/tree/f8d86827328bee63e01f541b36acfab6f1a824df">f8d8682</a>
+    <a href="https://github.com/warface1234455/Yoggie/tree/9d5f694ceb9d3338561fbaac9adcb8030890c446">9d5f694</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
 </body>
 </html>
