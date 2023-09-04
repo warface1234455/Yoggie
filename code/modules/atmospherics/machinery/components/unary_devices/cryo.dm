@@ -224,18 +224,17 @@ GLOBAL_VAR_INIT(cryo_overlay_cover_off, mutable_appearance('icons/obj/cryogenics
 			robotic_limb_damage += limb.get_damage(stamina=FALSE)
 
 	if(mob_occupant.health >= mob_occupant.getMaxHealth() - robotic_limb_damage) // Don't bother with fully healed people. Now takes robotic limbs into account.
-		var/has_cryo_wound = FALSE
-		if(C && C.all_wounds)
+		if(C)
 			for(var/datum/wound/wound as anything in C.all_wounds)
 				if(wound.wound_flags & ACCEPTS_CRYO)
 					if(!treating_wounds) // if we have wounds and haven't already alerted the doctors we're only dealing with the wounds, let them know
 						playsound(src, 'sound/machines/cryo_warning.ogg', volume) // Bug the doctors.
 						var/msg = "Patient vitals fully recovered, continuing automated burn treatment."
 						radio.talk_into(src, msg, radio_channel)
-					has_cryo_wound = TRUE
-					break
+						treating_wounds = TRUE
+				else
+					treating_wounds = FALSE
 
-		treating_wounds = has_cryo_wound
 		if(!treating_wounds)
 			set_on(FALSE)
 			playsound(src, 'sound/machines/cryo_warning.ogg', volume) // Bug the doctors.
