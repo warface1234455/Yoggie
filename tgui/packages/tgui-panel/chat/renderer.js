@@ -94,13 +94,7 @@ const updateMessageBadge = message => {
   const foundBadge = node.querySelector('.Chat__badge');
   const badge = foundBadge || document.createElement('div');
   badge.textContent = times;
-  badge.className = classes([
-    'Chat__badge',
-    'Chat__badge--animate',
-  ]);
-  requestAnimationFrame(() => {
-    badge.className = 'Chat__badge';
-  });
+  badge.className = 'Chat__badge';
   if (!foundBadge) {
     node.appendChild(badge);
   }
